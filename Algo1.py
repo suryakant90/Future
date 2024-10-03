@@ -35,9 +35,7 @@ if st.button("Run Strategy"):
 
     # Plot buy signals
     plt.plot(signals[signals['Position'] == 1].index,
-             signals['Short_MA
-
-             [signals['Position'] == 1], 
+             signals['Short_MA'][signals['Position'] == 1], 
              '^', markersize=10, color='g', label='Buy Signal')
 
     # Plot sell signals
